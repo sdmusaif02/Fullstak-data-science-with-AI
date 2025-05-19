@@ -11,4 +11,26 @@ Introduction of Python:
   2. Numpy
   3. Matplotib
   4. Scikit-learn
+ 
+vaiables and Data type :
 
+* variables
+  
+  - Data /type can be stored in temporary storage space caleed variables.
+  Ex :-
+
+        Student = " Adnan "
+        print(student)
+ output :-
+        Adnan
+
+* Data types :-
+  - Every variable is associated with a data type.
+
+  1. int        - 10 , 20
+  2. float      - 3.14 , 2.4
+  3. Boolean    - true , False 
+  4. String     - " srtmun "
+  5. Complex    - 5+3j
+                  5 = is real part
+                  3 = is imaginary part
