@@ -34,3 +34,68 @@ vaiables and Data type :
   5. Complex    - 5+3j
                   5 = is real part
                   3 = is imaginary part
+
+
+* Operators and string functions :-
+
+1. Arithmetic Operators 
+
+   Used for mathematical operations:
+   Operator	Meaning	Example
+
+   operator    Description       Example
+      +	       Addition           a + b
+      -   	   Subtraction       	a - b
+      *    	   Multiplication    	a * b
+      /    	   Division          	a / b
+
+
+2. Relational operators :-
+
+   Operators Used to compare two values:
+
+  Operator   	Description        	Example
+
+  ==         	Equal to          	a == b
+  !=	        Not equal	          a != b
+  >	          Greater than	      a > b
+  <          	Less than        
+
+
+3. Logical Operators :-
+
+   Used to combine conditional statements:
+
+ Operator	                  Description	                                  Example
+
+ and	                      Returns True if both are true                	a > 5 and b < 10
+ or                       	Returns True if at least one is true        	a > 5 or b < 3
+ not	                      Reverses the result                         	not(a > 5)	a < b
+
+
+
+* Python String Functions :–
+
+🔹 What is a String?
+       A string is a sequence of characters enclosed in quotes:
+
+🔸 Common String Functions:
+       Function	Description	Example
+
+              len()	           Returns length of string	                      len("hello") → 5
+             .lower()	         Converts to lowercase                        	"Hello".lower() → "hello"
+             .upper()	         Converts to uppercase                        	"hello".upper() → "HELLO"
+             .capitalize()   	 Capitalizes first letter                      	"python".capitalize()
+             .title()    	     Capitalizes first letter of each word 	        "hello world".title()
+             .strip()	         Removes whitespace	                            " hello ".strip()
+             .replace()	       Replaces substring                             "hi".replace("h","b") → "bi"
+             .find()	         Finds position of substring                  	"hello".find("e") → 1
+             .count()        	 Counts occurrences of a substring            	"apple".count("p") → 2
+             .startswith()	   Checks if string starts with text            	"hello".startswith("he")
+             .endswith()	     Checks if string ends with text              	"test".endswith("t")
+             .split()	         Splits string into a list	                    "a,b,c".split(",") → ['a','b','c']
+             .join()	         Joins elements of list into a string	          ",".join(['a','b']) → 'a,b'
+
+
+ 
+
