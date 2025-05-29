@@ -97,5 +97,133 @@ vaiables and Data type :
              .join()	         Joins elements of list into a string	          ",".join(['a','b']) → 'a,b'
 
 
+
+🧠 Python Data Structures Notes :-
+
+📌 1. Built-in Data Structures
+✅ List
+Ordered, mutable, allows duplicates.
+
+python
+Copy
+Edit
+my_list = [1, 2, 3, 4]
+my_list.append(5)
+my_list[0]  # Access first element
+Key Methods:
+
+append(), insert(), pop(), remove(), sort(), reverse(), extend()
+
+✅ Tuple
+Ordered, immutable, allows duplicates.
+
+python
+Copy
+Edit
+my_tuple = (1, 2, 3)
+Use Case: Fixed collections of items (e.g., coordinates).
+
+✅ Set
+Unordered, mutable, no duplicates.
+
+python
+Copy
+Edit
+my_set = {1, 2, 3}
+my_set.add(4)
+my_set.remove(2)
+Set Operations:
+
+union(), intersection(), difference()
+
+✅ Dictionary
+Key-value pairs, unordered (as of Python <3.7), mutable.
+
+python
+Copy
+Edit
+my_dict = {"name": "Alice", "age": 25}
+my_dict["name"]  # Access value
+my_dict["age"] = 26
+Key Methods:
+
+keys(), values(), items(), get(), update(), pop()
+
+📌 2. String (Technically a Data Structure)
+Immutable, sequence of characters.
+
+python
+Copy
+Edit
+s = "hello"
+s[0]  # 'h'
+Key Methods:
+
+lower(), upper(), split(), replace(), strip()
+
+🧱 3. User-defined Data Structures
+✅ Stack (LIFO)
+python
+Copy
+Edit
+stack = []
+stack.append(10)
+stack.pop()
+✅ Queue (FIFO)
+python
+Copy
+Edit
+from collections import deque
+queue = deque([1, 2, 3])
+queue.append(4)
+queue.popleft()
+✅ Linked List (Using Classes)
+python
+Copy
+Edit
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+✅ Tree (Binary Tree Example)
+python
+Copy
+Edit
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+✅ Graph (Using Dictionary)
+python
+Copy
+Edit
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D'],
+    'C': ['A'],
+    'D': ['B']
+}
+⚙️ 4. Modules for Advanced Data Structures
+collections — deque, Counter, defaultdict, OrderedDict
+
+heapq — Min-heaps
+
+queue — Thread-safe queues
+
+array — Efficient arrays of numeric values
+
+📚 Useful Tips
+Use list when order and mutability are needed.
+
+Use tuple when immutability is required.
+
+Use set to remove duplicates or perform set operations.
+
+Use dict for fast key-value lookups.
+
+Use collections and custom classes for more complex data structures like graphs, trees, and linked lists.
+
+Would you like this in PDF/Doc format, or should I generate flashcards, mind maps, or a summary sheet for revision?
  
 
