@@ -236,3 +236,28 @@ EX- int(): convert avalue to integer.
     float():convert a value to a floating-point.
     str():convert a value to a string.
     list(),tuple(),set(),dict(),and bool()
+
+IMPLICIT TYPE CASTING:-
+   Also know as corecion ,is performed automatically by the python interpreter.this usually occurs when performing operation between different data types,and python implicity convert one data type to another to avoid data loss errors.
+EX-
+  num_int = 10
+  num_float = 5.5
+  result = num_int + num_float
+  print(result)
+  print(type(result))
+
+#output: 15.5
+#output:<class 'float'>
+
+#Converting string to integer:
+srt_num = 26
+int_num = int(str_num)
+print(int_num)
+print(type(int_num))
+
+#output: 26
+#output: <class 'int'>
+
+#Converting a value to boolean:
+bool(0) #output: False
+boolen(1) #output: True
