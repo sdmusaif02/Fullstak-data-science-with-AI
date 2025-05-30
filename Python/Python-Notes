@@ -231,3 +231,8 @@ Would you like this in PDF/Doc format, or should I generate flashcards, mind map
 *python-typecasting:- 
                   - Type casting in python refers to the process of converting the data type of a variable frpm one type to another ,such as from a string to integr, a float to an integer
 etc.
+
+EX- int(): convert avalue to integer.
+    float():convert a value to a floating-point.
+    str():convert a value to a string.
+    list(),tuple(),set(),dict(),and bool()
