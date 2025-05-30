@@ -225,5 +225,9 @@ Use dict for fast key-value lookups.
 Use collections and custom classes for more complex data structures like graphs, trees, and linked lists.
 
 Would you like this in PDF/Doc format, or should I generate flashcards, mind maps, or a summary sheet for revision?
- 
 
+
+
+*python-typecasting:- 
+                  - Type casting in python refers to the process of converting the data type of a variable frpm one type to another ,such as from a string to integr, a float to an integer
+etc.
