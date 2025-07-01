@@ -532,6 +532,125 @@ df.to_excel('output.xlsx', index=False)
 df.to_json('output.json')
 
 
+📌 1. Importing Matplotlib
+python
+Copy
+Edit
+import matplotlib.pyplot as plt
+📌 2. Line Plot
+python
+Copy
+Edit
+plt.plot(x, y, color='blue', marker='o', linestyle='--', linewidth=2)
+plt.title("Title")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.grid(True)
+plt.show()
+Common line styles:
+
+'-': solid
+
+'--': dashed
+
+':': dotted
+
+'-.': dash-dot
+
+Markers:
+
+'o': circle
+
+'s': square
+
+'^': triangle
+
+'*': star
+
+📌 3. Bar Chart
+python
+Copy
+Edit
+plt.bar(x, y, color='orange', width=0.4, edgecolor='black')
+plt.title("Bar Chart")
+plt.xlabel("Categories")
+plt.ylabel("Values")
+plt.show()
+Horizontal Bar Chart:
+
+python
+Copy
+Edit
+plt.barh(x, y, color='skyblue')
+📌 4. Pie Chart
+python
+Copy
+Edit
+plt.pie(values, labels=labels, autopct="%1.1f%%", startangle=90)
+plt.axis('equal')  # Circle shape
+plt.title("Pie Chart")
+plt.show()
+📌 5. Scatter Plot
+python
+Copy
+Edit
+plt.scatter(x, y, color='red', marker='x')
+plt.title("Scatter Plot")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.grid()
+plt.show()
+📌 6. Histogram
+python
+Copy
+Edit
+plt.hist(data, bins=10, color='purple', edgecolor='black')
+plt.title("Histogram")
+plt.xlabel("Values")
+plt.ylabel("Frequency")
+plt.show()
+📌 7. Box Plot
+python
+Copy
+Edit
+plt.boxplot(data)
+plt.title("Box Plot")
+plt.show()
+📌 8. Subplots
+python
+Copy
+Edit
+plt.subplot(1, 2, 1)  # (rows, cols, index)
+plt.plot(x, y)
+
+plt.subplot(1, 2, 2)
+plt.bar(x, y)
+
+plt.tight_layout()
+plt.show()
+📌 9. Customize Plot
+python
+Copy
+Edit
+plt.legend(["Line A"], loc='best')
+plt.xticks(rotation=45)
+plt.yticks([0, 10, 20, 30])
+📌 10. Save Plot
+python
+Copy
+Edit
+plt.savefig("plot.png", dpi=300)
+✅ Extra Tips:
+Use fig = plt.figure(figsize=(8, 5)) to resize.
+
+Combine pandas and matplotlib for powerful plots.
+
+python
+Copy
+Edit
+df.plot(kind='bar')
+plt.show()
+
 
 
 
