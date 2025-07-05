@@ -652,6 +652,166 @@ df.plot(kind='bar')
 plt.show()
 
 
+📘 Seaborn Notes for Python
+🔹 What is Seaborn?
+Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+
+Install Seaborn:
+
+bash
+Copy
+Edit
+pip install seaborn
+Import Seaborn:
+
+python
+Copy
+Edit
+import seaborn as sns
+import matplotlib.pyplot as plt
+📊 Basic Functions
+1. Load Sample Datasets
+python
+Copy
+Edit
+df = sns.load_dataset("tips")  # Built-in dataset
+df.head()
+2. Set Style
+python
+Copy
+Edit
+sns.set_style("darkgrid")  # Options: whitegrid, darkgrid, dark, white, ticks
+📈 Plotting Functions
+🔸 1. Distribution Plots
+Histogram + KDE:
+
+python
+Copy
+Edit
+sns.histplot(df['total_bill'], kde=True)
+KDE only:
+
+python
+Copy
+Edit
+sns.kdeplot(df['total_bill'])
+🔸 2. Categorical Plots
+Bar Plot:
+
+python
+Copy
+Edit
+sns.barplot(x='sex', y='total_bill', data=df)
+Count Plot:
+
+python
+Copy
+Edit
+sns.countplot(x='day', data=df)
+Box Plot:
+
+python
+Copy
+Edit
+sns.boxplot(x='day', y='total_bill', data=df)
+Violin Plot:
+
+python
+Copy
+Edit
+sns.violinplot(x='day', y='total_bill', data=df)
+Strip Plot:
+
+python
+Copy
+Edit
+sns.stripplot(x='day', y='total_bill', data=df, jitter=True)
+Swarm Plot:
+
+python
+Copy
+Edit
+sns.swarmplot(x='day', y='total_bill', data=df)
+🔸 3. Relational Plots
+Scatter Plot:
+
+python
+Copy
+Edit
+sns.scatterplot(x='total_bill', y='tip', data=df)
+Line Plot:
+
+python
+Copy
+Edit
+sns.lineplot(x='size', y='tip', data=df)
+Relplot (Flexible for line/scatter):
+
+python
+Copy
+Edit
+sns.relplot(x='total_bill', y='tip', data=df, kind='scatter')
+🔸 4. Matrix Plots
+Heatmap:
+
+python
+Copy
+Edit
+corr = df.corr()
+sns.heatmap(corr, annot=True, cmap='coolwarm')
+Clustermap:
+
+python
+Copy
+Edit
+sns.clustermap(corr, annot=True)
+🧩 Advanced Seaborn Usage
+🔸 Hue, Style, Size
+python
+Copy
+Edit
+sns.scatterplot(x='total_bill', y='tip', hue='sex', style='time', size='size', data=df)
+🔸 Pair Plot
+python
+Copy
+Edit
+sns.pairplot(df, hue='sex')
+🔸 Joint Plot
+python
+Copy
+Edit
+sns.jointplot(x='total_bill', y='tip', data=df, kind='hex')
+🎨 Customization Options
+🔸 Titles & Labels
+python
+Copy
+Edit
+plt.title("Tip vs Total Bill")
+plt.xlabel("Total Bill")
+plt.ylabel("Tip")
+🔸 Color Palettes
+python
+Copy
+Edit
+sns.set_palette("pastel")  # Options: deep, muted, bright, pastel, dark, colorblind
+⚠️ Removing Warnings
+python
+Copy
+Edit
+import warnings
+warnings.filterwarnings('ignore')
+📌 Tips
+Always import matplotlib.pyplot to use plt.show()
+
+Use fig = plt.figure(figsize=(10,6)) to increase figure size
+
+Use palette='Set2' or palette='coolwarm' for nice color themes
+
+Use annot=True in heatmap to show values
+
+
+
+
 
 
 
