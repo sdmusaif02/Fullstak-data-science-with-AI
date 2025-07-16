@@ -809,6 +809,101 @@ Use palette='Set2' or palette='coolwarm' for nice color themes
 
 Use annot=True in heatmap to show values
 
+Python Dictionary :-
+
+📌 What is a Dictionary?
+    A dictionary in Python is a collection of key-value pairs, where each key is unique and maps to a value.
+
+python
+Copy
+Edit
+my_dict = {
+    "name": "Musaif",
+    "age": 20,
+    "city": "Hyderabad"
+}
+🔑 Key Features
+Unordered (before Python 3.7), ordered from Python 3.7+
+
+Mutable (can be changed)
+
+Keys are unique and immutable (like strings, numbers, tuples)
+
+Values can be any data type
+
+✅ Creating a Dictionary
+python
+Copy
+Edit
+# Method 1
+student = {"name": "Ali", "age": 21}
+
+# Method 2
+student = dict(name="Ali", age=21)
+🎯 Accessing Values
+python
+Copy
+Edit
+print(student["name"])      # Output: Ali
+print(student.get("age"))   # Output: 21
+✏️ Modifying Values
+python
+Copy
+Edit
+student["age"] = 22
+➕ Adding New Items
+python
+Copy
+Edit
+student["grade"] = "A"
+❌ Removing Items
+python
+Copy
+Edit
+del student["age"]           # Using del
+student.pop("grade")         # Using pop()
+student.clear()              # Clears all items
+🔁 Looping through Dictionary
+python
+Copy
+Edit
+# Keys only
+for key in student:
+    print(key)
+
+# Keys and values
+for key, value in student.items():
+    print(key, value)
+
+# Values only
+for value in student.values():
+    print(value)
+📚 Useful Dictionary Methods
+Method	Description
+dict.get(key)	Returns value of the key
+dict.keys()	Returns all keys
+dict.values()	Returns all values
+dict.items()	Returns key-value pairs
+dict.update(dict2)	Updates dictionary with another dict
+dict.pop(key)	Removes item with specified key
+dict.clear()	Removes all items
+
+📌 Nested Dictionary
+python
+Copy
+Edit
+students = {
+    "student1": {"name": "Ali", "age": 20},
+    "student2": {"name": "Zara", "age": 21}
+}
+print(students["student1"]["name"])  # Output: Ali
+🎓 Dictionary Comprehension
+python
+Copy
+Edit
+squares = {x: x**2 for x in range(1, 6)}
+print(squares)  # Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
 
 
 
